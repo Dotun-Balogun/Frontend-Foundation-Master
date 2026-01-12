@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <!--
+    FILE: script-order.html
+
+    PURPOSE:
+    This file demonstrates how the browser reads HTML
+    from top to bottom and how JavaScript depends on
+    elements already existing in the DOM.
+
+    KEY IDEA:
+    JavaScript can ONLY interact with elements that
+    the browser has already parsed.
+  -->
+
+  <title>Script Order Test</title>
+
+  <!--
+    ⚠️ IMPORTANT EXPERIMENT
+
+    This script is intentionally placed BEFORE the <h1> element.
+    Open the browser console to observe what happens.
+
+    STEPS:
+    1. Open this file in the browser
+    2. Open DevTools → Console
+    3. Observe the output
+
+    EXPECTED RESULT:
+    - The script runs
+    - The <h1> element is NOT found (null)
+
+    WHY?
+    Because the browser has not reached the <h1> yet
+    when this script executes.
+  -->
+
+  <script>
+    console.log("Script is running...");
+
+    // Try to select the <h1> element
+    const heading = document.querySelector("h1");
+
+    // Log the result to the console
+    console.log("Heading element:", heading);
+  </script>
+
+</head>
+<body>
+
+  <!--
+    This <h1> element appears AFTER the script above.
+
+    At the moment the script runs, this element
+    does NOT exist in the DOM yet.
+  -->
+  <h1>Frontend Foundation</h1>
+
+  <!--
+    🧪 EXPERIMENTS TO TRY (VERY IMPORTANT)
+
+    1️⃣ Move the <script> tag to the bottom of the body
+       → Reload the page
+       → Observe that the <h1> is now found
+
+    2️⃣ Move the script back to the <head>
+       Add the attribute: defer
+       Example:
+       <script defer>...</script>
+
+       → Reload and observe the difference
+
+    3️⃣ Change the text of the <h1> using JavaScript
+       once it is successfully selected
+  -->
+
+</body>
+</html>
