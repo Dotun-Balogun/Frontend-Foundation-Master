@@ -1,0 +1,59 @@
+/* 
+  ELEMENT SELECTOR
+  Targets all <p> tags
+*/
+p {
+  color: #333;
+  font-size: 16px;
+}
+
+/* 
+  CLASS SELECTOR
+  Targets elements with class="highlight"
+*/
+.highlight {
+  background-color: yellow;
+  padding: 4px;
+}
+
+/*
+  ID SELECTOR
+  Targets element with id="intro"
+*/
+#intro {
+  font-weight: bold;
+  color: #1d4719;
+}
+
+/*
+  DESCENDANT SELECTOR
+  Targets <p> inside <div>
+*/
+div p {
+  font-style: italic;
+}
+
+/*
+  ATTRIBUTE SELECTOR
+  Targets <a> with target="_blank"
+*/
+a[target="_blank"] {
+  color: red;
+  text-decoration: underline;
+}
+
+/*
+  PSEUDO-CLASS
+  Targets the first <li> of any list
+*/
+li:first-child {
+  font-weight: bold;
+}
+
+/*
+  PSEUDO-ELEMENT
+  Adds content before <h1>
+*/
+h1::before {
+  content: "🔥 ";
+}
