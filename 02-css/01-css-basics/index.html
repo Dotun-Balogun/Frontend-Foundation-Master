@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <!--
+    This <title> is NOT styled by CSS.
+    It is browser metadata, not page content.
+  -->
+  <title>CSS Basics – Lesson 2</title>
+
+  <!--
+    CSS is usually loaded in the <head>
+    so the browser applies styles BEFORE rendering the page.
+
+    If CSS is loaded late, users may see
+    unstyled content briefly (called FOUC).
+  -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!--
+    HTML gives structure.
+    CSS will control how these elements LOOK.
+  -->
+
+  <h1>Welcome to CSS Basics</h1>
+
+  <p>
+    This paragraph will be styled using an external CSS file.
+    CSS does not change meaning, only presentation.
+  </p>
+
+  <button>
+    Click Me
+  </button>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+/*
+  CSS stands for Cascading Style Sheets.
+
+  It works by selecting HTML elements
+  and applying visual rules to them.
+*/
+
+/*
+  This rule targets the <body> element.
+  Most styles inherit from body.
+*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+/*
+  This rule targets all <h1> elements.
+*/
+h1 {
+  color: #1d4719;
+  font-size: 32px;
+}
+
+/*
+  This rule targets all <p> elements.
+*/
+p {
+  color: #333;
+  line-height: 1.6;
+}
+
+/*
+  This rule targets all <button> elements.
+*/
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+/*
+  This rule runs when the user hovers the button.
+*/
+button:hover {
+  background-color: #1d4719;
+}
