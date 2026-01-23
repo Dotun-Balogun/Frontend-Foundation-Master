@@ -76,3 +76,13 @@ h1::before {
 h1::after{
   content: "------>";
 }
+
+/* more pseudo-elements */
+h1::first-line {
+  font-weight: bold;
+}
+
+h2::first-letter{
+  font-size: 200%;
+  color: blue;
+} 
