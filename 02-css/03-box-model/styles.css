@@ -1,0 +1,43 @@
+/*
+  By default, browsers use content-box sizing.
+  We will change this later to see the difference.
+*/
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/*
+  This is our main box
+*/
+.box {
+  width: 200px;
+
+  /*
+    PADDING:
+    Space INSIDE the box, between content and border
+  */
+  padding: 20px;
+
+  /*
+    BORDER:
+    Wraps around padding + content
+  */
+  border: 5px solid black;
+
+  /*
+    MARGIN:
+    Space OUTSIDE the box
+  */
+  margin: 20px;
+
+  background-color: #efeeee;
+}
+
+/*
+  Slight variation for comparison
+*/
+.secondary {
+  background-color: #1d4719;
+  color: white;
+}
