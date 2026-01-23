@@ -49,11 +49,18 @@ a[target="_blank"] {
 li:first-child {
   font-weight: bold;
 }
-
+li:last-child{
+  color:aqua
+}
 /*
   PSEUDO-ELEMENT
   Adds content before <h1>
 */
 h1::before {
   content: "🔥 ";
+}
+
+
+h1::after{
+  content: "------>";
 }
