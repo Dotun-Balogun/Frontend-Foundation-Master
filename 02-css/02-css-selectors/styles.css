@@ -52,6 +52,18 @@ li:first-child {
 li:last-child{
   color:aqua
 }
+
+li:nth-child(2) {
+  text-decoration: underline;
+}
+
+/* more pseudo-classes */
+li:nth-child(3) {
+  color: green;
+}
+li:nth-child(4) {
+  font-style: italic;
+} 
 /*
   PSEUDO-ELEMENT
   Adds content before <h1>
