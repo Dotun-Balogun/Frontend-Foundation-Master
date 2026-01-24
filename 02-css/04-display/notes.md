@@ -1,4 +1,4 @@
-# CSS Display — Lesson 2.4
+# CSS Display
 
 ## What is `display`?
 The display property controls:
