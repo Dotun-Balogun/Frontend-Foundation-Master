@@ -79,6 +79,7 @@ when appropriate instead.
 
 ---
 
+
 ## Key Takeaway
 > If layout feels confusing, check `display` first.
 > Most CSS layout issues start here.
