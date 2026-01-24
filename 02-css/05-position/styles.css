@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  height: 200vh; /* enables scrolling for fixed demo */
+}
+
+/*
+  Container gives absolute positioning a reference
+*/
+.container {
+  position: relative;
+  border: 3px dashed #1d4719;
+  padding: 20px;
+  height: 400px;
+}
+
+/*
+  Shared styles
+*/
+.box {
+  width: 120px;
+  padding: 10px;
+  border: 2px solid black;
+  background-color: #efeeee;
+  margin-bottom: 10px;
+}
+
+/*
+  STATIC (default)
+*/
+.static {
+  position: static;
+}
+
+/*
+  RELATIVE
+  Moves relative to its original position
+*/
+.relative {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background-color: lightblue;
+}
+
+/*
+  ABSOLUTE
+  Removed from normal flow
+  Positioned relative to nearest positioned ancestor
+*/
+.absolute {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: lightcoral;
+}
+
+/*
+  FIXED
+  Positioned relative to the viewport
+*/
+.fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+}
