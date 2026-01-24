@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/*
+  Shared box styles
+*/
+.box {
+  background-color: #efeeee;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+/*
+  BLOCK
+  - Takes full width
+  - Starts on new line
+*/
+.block {
+  display: block;
+  width: 200px;
+}
+
+/*
+  INLINE
+  - Width & height ignored
+  - Sits in text flow
+*/
+.inline {
+  display: inline;
+  width: 200px; /* ignored */
+  height: 200px; /* ignored */
+}
+
+/*
+  INLINE-BLOCK
+  - Respects width & height
+  - Sits inline
+*/
+.inline-block {
+  display: inline-block;
+  width: 150px;
+}
+
+/*
+  DISPLAY NONE
+  - Removed from layout entirely
+*/
+.hidden {
+  display: none;
+}
