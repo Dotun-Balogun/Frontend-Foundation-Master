@@ -70,3 +70,15 @@ body {
   background-color: black;
   color: white;
 }
+
+
+
+/* STICKY  */
+
+.sticky{
+  position:sticky;
+  top:0;
+  background-color: chocolate;
+  color: white;
+
+}
