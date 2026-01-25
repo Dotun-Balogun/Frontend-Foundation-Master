@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/*
+  FLEX CONTAINER
+*/
+.flex-container {
+  display: flex;
+
+  /*
+    Controls direction of items
+    row (default) | column
+  */
+  flex-direction: row;
+
+  /*
+    Horizontal alignment (main axis)
+  */
+  justify-content: space-between;
+
+  /*
+    Vertical alignment (cross axis)
+  */
+  align-items: center;
+
+  border: 3px dashed #1d4719;
+  padding: 20px;
+  height: 200px;
+}
+
+/*
+  FLEX ITEMS
+*/
+.box {
+  background-color: #efeeee;
+  border: 2px solid black;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+}
