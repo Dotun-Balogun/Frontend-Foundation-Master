@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/*
+  FLEX CONTAINER
+*/
+.flex-container {
+  display: flex;
+
+  /*
+    Allow items to wrap onto new lines
+  */
+  flex-wrap: wrap;
+
+  /*
+    Space between rows and columns
+  */
+  gap: 20px;
+
+  border: 3px dashed #1d4719;
+  padding: 20px;
+}
+
+/*
+  FLEX ITEMS
+*/
+.box {
+  background-color: #efeeee;
+  border: 2px solid black;
+  padding: 20px;
+  text-align: center;
+
+  /*
+    flex: grow shrink basis
+  */
+  flex: 1 1 150px;
+}
+
+/*
+  Individual item behavior
+*/
+.one {
+  flex-grow: 2;
+}
+
+.two {
+  flex-shrink: 0;
+}
+
+.three {
+  flex-basis: 300px;
+}
