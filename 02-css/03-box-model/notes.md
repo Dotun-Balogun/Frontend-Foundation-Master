@@ -1,4 +1,4 @@
-# CSS Box Model — Lesson 2.3
+# CSS Box Model
 
 ## What is the Box Model?
 Every HTML element is treated as a rectangular box.
