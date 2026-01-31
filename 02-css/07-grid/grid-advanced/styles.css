@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/*
+  GRID LAYOUT CONTAINER
+*/
+.layout {
+  display: grid;
+
+  /*
+    Define columns:
+    - Sidebar fixed
+    - Content flexible
+  */
+  grid-template-columns: 200px 1fr;
+
+  /*
+    Define rows
+  */
+  grid-template-rows: auto 1fr auto;
+
+  /*
+    Named grid areas
+  */
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+
+  gap: 20px;
+
+  min-height: 80vh;
+  border: 3px dashed #1d4719;
+  padding: 20px;
+}
+
+/*
+  Assign areas
+*/
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/*
+  Shared styles
+*/
+.box {
+  background-color: #efeeee;
+  border: 2px solid black;
+  padding: 20px;
+}
