@@ -1,0 +1,107 @@
+
+    /* 
+      MOBILE FIRST APPROACH
+      Start with mobile styles (base styles)
+      Then add complexity for larger screens
+    */
+
+    /* ===========================
+       BASE STYLES (MOBILE)
+       These apply to ALL screens
+       =========================== */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    header p {
+      font-size: 0.9rem;
+      margin-top: 5px;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column; /* Stack on mobile */
+      gap: 10px;
+    }
+
+    .box {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.2rem;
+      border-radius: 5px;
+    }
+
+    /* ===========================
+       TABLET (min-width: 600px)
+       Add styles for medium screens
+       =========================== */
+
+    @media (min-width: 600px) {
+      
+      body {
+        padding: 20px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      main {
+        flex-direction: row; /* Side by side */
+        flex-wrap: wrap;
+      }
+
+      .box {
+        flex: 1 1 200px;
+        font-size: 1.3rem;
+      }
+
+    }
+
+    /* ===========================
+       DESKTOP (min-width: 900px)
+       Add styles for large screens
+       =========================== */
+
+    @media (min-width: 900px) {
+      
+      body {
+        padding: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      .box {
+        padding: 30px;
+        font-size: 1.5rem;
+      }
+
+    }
+  
