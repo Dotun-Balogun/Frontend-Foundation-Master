@@ -1,3 +1,6 @@
+/* 
+  RESET & BASE SETUP
+*/
 * {
   box-sizing: border-box;
 }
@@ -7,35 +10,49 @@ body {
   padding: 20px;
 }
 
-/* Basic container and items */
+/*
+  FLUID CONTAINER
+*/
 .container {
   display: flex;
+  flex-wrap: wrap; /* allows items to move to next line */
   gap: 20px;
-  justify-content: space-between;
-  flex-wrap: wrap; /* allows items to wrap on smaller screens */
 }
 
-.box {
-  background-color: #efeeee;
+/*
+  FLUID ITEMS
+*/
+.card {
+  flex: 1 1 250px;
+  padding: 20px;
   border: 2px solid black;
-  padding: 40px;
+  background-color: #efeeee;
   text-align: center;
-
-  /* Fluid width example */
-  flex: 1 1 200px; /* grow, shrink, basis */
+  font-size: 1.2rem;
 }
 
-/* Media Query Example: Tablets */
-@media (max-width: 900px) {
-  .container {
-    flex-direction: column;
+/*
+  MEDIA QUERY — TABLET & BELOW
+*/
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .card {
+    font-size: 1rem;
   }
 }
 
-/* Media Query Example: Mobile */
-@media (max-width: 500px) {
-  .box {
-    padding: 20px;
-    font-size: 14px;
+/*
+  MEDIA QUERY — MOBILE
+*/
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .card {
+    padding: 15px;
   }
 }
