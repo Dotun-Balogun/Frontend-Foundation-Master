@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Typography - Complete Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>CSS Typography Masterclass</h1>
+        <p class="subtitle">Learn how to create beautiful, readable, and accessible text on the web</p>
+    </header>
+
+    <main class="container">
+        <!-- Section 1: Font Families -->
+        <section class="lesson-section">
+            <h2>1. Font Families</h2>
+            
+            <div class="example-box">
+                <h3 class="serif-font">Serif Font (Playfair Display)</h3>
+                <p class="serif-font">Serif fonts have small lines or strokes attached to the ends of letters. They're often used for traditional, elegant, or formal designs.</p>
+            </div>
+
+            <div class="example-box">
+                <h3 class="sans-serif-font">Sans-Serif Font (Inter)</h3>
+                <p class="sans-serif-font">Sans-serif fonts are clean and modern without decorative strokes. They're highly readable on screens and popular for web design.</p>
+            </div>
+
+            <div class="example-box">
+                <h3 class="monospace-font">Monospace Font (Fira Code)</h3>
+                <p class="monospace-font">Monospace fonts have equal spacing for each character. Perfect for code, tables, and technical content.</p>
+            </div>
+
+            <div class="example-box">
+                <h3 class="font-stack">Font Stack Example</h3>
+                <p class="font-stack">This uses a font stack with fallbacks: Arial → Helvetica → system sans-serif</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Font Properties -->
+        <section class="lesson-section">
+            <h2>2. Font Properties</h2>
+            
+            <div class="example-box">
+                <h3>Font Weight</h3>
+                <p class="weight-light">Light weight (300)</p>
+                <p class="weight-regular">Regular weight (400)</p>
+                <p class="weight-semibold">Semi-bold weight (600)</p>
+                <p class="weight-bold">Bold weight (700)</p>
+            </div>
+
+            <div class="example-box">
+                <h3>Font Style</h3>
+                <p class="style-normal">Normal text</p>
+                <p class="style-italic">Italic text</p>
+                <p class="style-oblique">Oblique text</p>
+            </div>
+
+            <div class="example-box">
+                <h3>Font Size</h3>
+                <p class="size-small">Small text (14px)</p>
+                <p class="size-medium">Medium text (16px - base)</p>
+                <p class="size-large">Large text (24px)</p>
+                <p class="size-xlarge">Extra large text (32px)</p>
+            </div>
+        </section>
+
+        <!-- Section 3: Text Properties -->
+        <section class="lesson-section">
+            <h2>3. Text Styling Properties</h2>
+            
+            <div class="example-box">
+                <h3>Text Alignment</h3>
+                <p class="text-left">Left aligned text (default for LTR languages)</p>
+                <p class="text-center">Center aligned text</p>
+                <p class="text-right">Right aligned text</p>
+                <p class="text-justify">Justified text spreads content evenly across the full width. This creates clean edges on both sides but can sometimes create awkward spacing between words.</p>
+            </div>
+
+            <div class="example-box">
+                <h3>Text Decoration</h3>
+                <p class="text-underline">Underlined text</p>
+                <p class="text-overline">Overlined text</p>
+                <p class="text-line-through">Strikethrough text</p>
+                <p class="text-no-decoration">Text with no decoration (useful for links)</p>
+            </div>
+
+            <div class="example-box">
+                <h3>Text Transform</h3>
+                <p class="text-uppercase">uppercase text transformation</p>
+                <p class="text-lowercase">LOWERCASE TEXT TRANSFORMATION</p>
+                <p class="text-capitalize">capitalize each word</p>
+            </div>
+        </section>
+
+        <!-- Section 4: Line Height & Letter Spacing -->
+        <section class="lesson-section">
+            <h2>4. Spacing & Readability</h2>
+            
+            <div class="example-box">
+                <h3>Line Height (Leading)</h3>
+                <div class="line-height-tight">
+                    <p>Tight line height (1.2) - This can feel cramped and is harder to read, especially for longer paragraphs. Use sparingly for headings or short text.</p>
+                </div>
+                <div class="line-height-normal">
+                    <p>Normal line height (1.5) - This is ideal for body text. It provides good readability and is recommended for most content.</p>
+                </div>
+                <div class="line-height-loose">
+                    <p>Loose line height (2.0) - This creates more breathing room but can feel disconnected. Good for poetry or emphasis.</p>
+                </div>
+            </div>
+
+            <div class="example-box">
+                <h3>Letter Spacing (Tracking)</h3>
+                <p class="letter-spacing-tight">Tight letter spacing (-0.5px)</p>
+                <p class="letter-spacing-normal">Normal letter spacing</p>
+                <p class="letter-spacing-loose">Loose letter spacing (2px)</p>
+                <p class="letter-spacing-wide">W I D E  S P A C I N G (5px)</p>
+            </div>
+
+            <div class="example-box">
+                <h3>Word Spacing</h3>
+                <p class="word-spacing-normal">Normal word spacing for comparison</p>
+                <p class="word-spacing-wide">Increased word spacing makes text more spread out</p>
+            </div>
+        </section>
+
+        <!-- Section 5: Advanced Typography -->
+        <section class="lesson-section">
+            <h2>5. Advanced Typography Features</h2>
+            
+            <div class="example-box">
+                <h3>Text Shadow</h3>
+                <h2 class="text-shadow-soft">Soft Shadow Effect</h2>
+                <h2 class="text-shadow-hard">Hard Shadow Effect</h2>
+                <h2 class="text-shadow-multiple">Multiple Shadows</h2>
+            </div>
+
+            <div class="example-box">
+                <h3>Text Overflow Handling</h3>
+                <p class="text-overflow-ellipsis">This is a very long text that will be truncated with an ellipsis when it exceeds the container width</p>
+                <p class="text-overflow-clip">This is a very long text that will be clipped without any indication when it exceeds the container width</p>
+            </div>
+
+            <div class="example-box">
+                <h3>White Space Control</h3>
+                <p class="whitespace-normal">Normal: Multiple    spaces    are    collapsed    into    one.</p>
+                <p class="whitespace-pre">Pre: Preserves    spaces    and    line breaks
+exactly as written.</p>
+                <p class="whitespace-nowrap">No wrap: This text will not wrap to the next line no matter how long it gets or how narrow the container becomes.</p>
+            </div>
+
+            <div class="example-box">
+                <h3>Hyphens & Word Breaking</h3>
+                <p class="text-hyphens">Supercalifragilisticexpialidocious antidisestablishmentarianism</p>
+                <p class="text-word-break">verylongwordwithoutanyspacesorbreaksthatwouldnormallycauseoverflow</p>
+            </div>
+        </section>
+
+        <!-- Section 6: Web Fonts -->
+        <section class="lesson-section">
+            <h2>6. Web Fonts in Action</h2>
+            
+            <div class="example-box">
+                <h3 class="google-font-heading">Google Fonts Integration</h3>
+                <p class="google-font-body">This text uses Google Fonts (Inter) loaded from their CDN. Notice how it renders with custom typography that's not available by default on all systems.</p>
+            </div>
+
+            <div class="example-box">
+                <h3>System Font Stack</h3>
+                <p class="system-font">This uses the system font stack, which renders using fonts native to the user's operating system. This is fast and doesn't require external downloads.</p>
+            </div>
+        </section>
+
+        <!-- Section 7: Responsive Typography -->
+        <section class="lesson-section">
+            <h2>7. Responsive Typography</h2>
+            
+            <div class="example-box">
+                <h3 class="responsive-heading">This heading scales with viewport</h3>
+                <p class="responsive-text">This paragraph uses clamp() to scale smoothly between minimum and maximum sizes based on viewport width. Resize your browser to see it adapt!</p>
+            </div>
+
+            <div class="example-box">
+                <h3>Relative Units</h3>
+                <p class="rem-text">This uses rem units (1.125rem = 18px if root is 16px)</p>
+                <p class="em-text">This uses em units (1.125em relative to parent)</p>
+                <div class="em-nested">
+                    <p class="em-text">Nested em compounds: 1.125em × 1.125em</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Typography Best Practices -->
+        <section class="lesson-section">
+            <h2>8. Real-World Examples</h2>
+            
+            <article class="article-example">
+                <h2 class="article-title">The Art of Web Typography</h2>
+                <p class="article-meta">Published on February 3, 2026 • 5 min read</p>
+                <p class="article-lead">Typography is one of the most important aspects of web design. Good typography enhances readability, establishes hierarchy, and creates visual harmony.</p>
+                <p class="article-body">The choice of typeface, size, spacing, and color all work together to create an effective reading experience. Professional web designers spend considerable time perfecting these details to ensure content is both beautiful and functional.</p>
+                <blockquote class="article-quote">
+                    "Typography is the craft of endowing human language with a durable visual form."
+                    <cite>— Robert Bringhurst</cite>
+                </blockquote>
+            </article>
+
+            <div class="card-example">
+                <h3 class="card-title">Product Card Typography</h3>
+                <p class="card-price">$49.99</p>
+                <p class="card-description">This demonstrates typography in a common UI component with proper hierarchy and spacing.</p>
+                <button class="card-button">Add to Cart</button>
+            </div>
+        </section>
+
+        <!-- Section 9: Accessibility -->
+        <section class="lesson-section accessibility-section">
+            <h2>9. Typography & Accessibility</h2>
+            
+            <div class="example-box">
+                <h3>Good Contrast</h3>
+                <p class="good-contrast">This text has sufficient contrast ratio (4.5:1 minimum for normal text)</p>
+            </div>
+
+            <div class="example-box warning-box">
+                <h3>Poor Contrast ⚠️</h3>
+                <p class="poor-contrast">This text has insufficient contrast and is hard to read</p>
+            </div>
+
+            <div class="example-box">
+                <h3>Readable Line Length</h3>
+                <p class="good-line-length">The ideal line length for readability is 50-75 characters (about 8-12 words). This paragraph demonstrates proper measure for comfortable reading without eye strain.</p>
+                <p class="bad-line-length">Lines that are too long force readers to work harder, moving their eyes across excessive horizontal distance, which can cause fatigue and reduced comprehension, especially for people with dyslexia or other reading difficulties.</p>
+            </div>
+
+            <div class="example-box">
+                <h3>Scalable Text</h3>
+                <p class="scalable-text">This text uses relative units (rem) so users can adjust text size in their browser settings without breaking the layout.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p>CSS Typography Lesson - Practice and Experiment!</p>
+    </footer>
+</body>
+</html>

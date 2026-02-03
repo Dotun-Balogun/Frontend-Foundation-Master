@@ -1,0 +1,598 @@
+/* ============================================
+   CSS TYPOGRAPHY STYLES
+   ============================================ */
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Color Palette */
+    --primary-color: #2563eb;
+    --secondary-color: #7c3aed;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --background: #ffffff;
+    --background-gray: #f9fafb;
+    --border-color: #e5e7eb;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+    
+    /* Typography Scale */
+    --font-size-xs: 0.75rem;    /* 12px */
+    --font-size-sm: 0.875rem;   /* 14px */
+    --font-size-base: 1rem;     /* 16px */
+    --font-size-lg: 1.125rem;   /* 18px */
+    --font-size-xl: 1.25rem;    /* 20px */
+    --font-size-2xl: 1.5rem;    /* 24px */
+    --font-size-3xl: 1.875rem;  /* 30px */
+    --font-size-4xl: 2.25rem;   /* 36px */
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--background);
+}
+
+/* ============================================
+   LAYOUT COMPONENTS
+   ============================================ */
+
+.page-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: var(--spacing-xl) var(--spacing-md);
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: var(--font-size-4xl);
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+}
+
+.subtitle {
+    font-size: var(--font-size-lg);
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+}
+
+.lesson-section {
+    margin-bottom: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    background-color: var(--background-gray);
+    border-radius: 8px;
+}
+
+.lesson-section h2 {
+    font-size: var(--font-size-3xl);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: var(--spacing-xs);
+}
+
+.example-box {
+    background-color: var(--background);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+
+.example-box h3 {
+    font-size: var(--font-size-xl);
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* ============================================
+   SECTION 1: FONT FAMILIES
+   ============================================ */
+
+.serif-font {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+}
+
+.sans-serif-font {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.monospace-font {
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    background-color: #f3f4f6;
+    padding: var(--spacing-xs);
+    border-radius: 4px;
+}
+
+.font-stack {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ============================================
+   SECTION 2: FONT PROPERTIES
+   ============================================ */
+
+/* Font Weights */
+.weight-light {
+    font-weight: 300;
+}
+
+.weight-regular {
+    font-weight: 400;
+}
+
+.weight-semibold {
+    font-weight: 600;
+}
+
+.weight-bold {
+    font-weight: 700;
+}
+
+/* Font Styles */
+.style-normal {
+    font-style: normal;
+}
+
+.style-italic {
+    font-style: italic;
+}
+
+.style-oblique {
+    font-style: oblique;
+}
+
+/* Font Sizes */
+.size-small {
+    font-size: 14px;
+}
+
+.size-medium {
+    font-size: 16px;
+}
+
+.size-large {
+    font-size: 24px;
+}
+
+.size-xlarge {
+    font-size: 32px;
+}
+
+/* ============================================
+   SECTION 3: TEXT PROPERTIES
+   ============================================ */
+
+/* Text Alignment */
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/* Text Decoration */
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-overline {
+    text-decoration: overline;
+}
+
+.text-line-through {
+    text-decoration: line-through;
+}
+
+.text-no-decoration {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* Text Transform */
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+/* ============================================
+   SECTION 4: SPACING & READABILITY
+   ============================================ */
+
+/* Line Height */
+.line-height-tight {
+    line-height: 1.2;
+}
+
+.line-height-normal {
+    line-height: 1.5;
+}
+
+.line-height-loose {
+    line-height: 2.0;
+}
+
+/* Letter Spacing */
+.letter-spacing-tight {
+    letter-spacing: -0.5px;
+}
+
+.letter-spacing-normal {
+    letter-spacing: normal;
+}
+
+.letter-spacing-loose {
+    letter-spacing: 2px;
+}
+
+.letter-spacing-wide {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Word Spacing */
+.word-spacing-normal {
+    word-spacing: normal;
+}
+
+.word-spacing-wide {
+    word-spacing: 8px;
+}
+
+/* ============================================
+   SECTION 5: ADVANCED TYPOGRAPHY
+   ============================================ */
+
+/* Text Shadows */
+.text-shadow-soft {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: var(--font-size-3xl);
+    color: var(--text-dark);
+}
+
+.text-shadow-hard {
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+    font-size: var(--font-size-3xl);
+    color: var(--primary-color);
+}
+
+.text-shadow-multiple {
+    text-shadow: 
+        1px 1px 0px #fff,
+        2px 2px 0px rgba(0, 0, 0, 0.15),
+        3px 3px 0px rgba(0, 0, 0, 0.1);
+    font-size: var(--font-size-3xl);
+    color: var(--secondary-color);
+}
+
+/* Text Overflow */
+.text-overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+}
+
+.text-overflow-clip {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    max-width: 300px;
+}
+
+/* White Space */
+.whitespace-normal {
+    white-space: normal;
+}
+
+.whitespace-pre {
+    white-space: pre;
+}
+
+.whitespace-nowrap {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Hyphens & Word Breaking */
+.text-hyphens {
+    hyphens: auto;
+    max-width: 200px;
+}
+
+.text-word-break {
+    word-break: break-all;
+    max-width: 200px;
+}
+
+/* ============================================
+   SECTION 6: WEB FONTS
+   ============================================ */
+
+.google-font-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+}
+
+.google-font-body {
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+}
+
+.system-font {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ============================================
+   SECTION 7: RESPONSIVE TYPOGRAPHY
+   ============================================ */
+
+.responsive-heading {
+    /* Scales from 24px to 48px based on viewport */
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.responsive-text {
+    /* Scales from 16px to 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.6;
+}
+
+.rem-text {
+    font-size: 1.125rem; /* 18px if root is 16px */
+}
+
+.em-text {
+    font-size: 1.125em; /* 18px relative to parent */
+}
+
+.em-nested {
+    font-size: 1.125em;
+}
+
+/* ============================================
+   SECTION 8: REAL-WORLD EXAMPLES
+   ============================================ */
+
+.article-example {
+    background-color: var(--background);
+    padding: var(--spacing-xl);
+    border-radius: 8px;
+    max-width: 700px;
+}
+
+.article-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-dark);
+}
+
+.article-meta {
+    font-size: var(--font-size-sm);
+    color: var(--text-light);
+    margin-bottom: var(--spacing-md);
+}
+
+.article-lead {
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-dark);
+}
+
+.article-body {
+    font-size: var(--font-size-base);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-dark);
+}
+
+.article-quote {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: var(--font-size-xl);
+    font-style: italic;
+    line-height: 1.6;
+    padding: var(--spacing-md);
+    border-left: 4px solid var(--primary-color);
+    background-color: var(--background-gray);
+    margin: var(--spacing-lg) 0;
+}
+
+.article-quote cite {
+    display: block;
+    margin-top: var(--spacing-sm);
+    font-size: var(--font-size-sm);
+    font-style: normal;
+    color: var(--text-light);
+}
+
+/* Card Component */
+.card-example {
+    background-color: var(--background);
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    margin-top: var(--spacing-md);
+}
+
+.card-title {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-dark);
+}
+
+.card-price {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.card-description {
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    color: var(--text-light);
+    margin-bottom: var(--spacing-md);
+}
+
+.card-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #1d4ed8;
+}
+
+/* ============================================
+   SECTION 9: ACCESSIBILITY
+   ============================================ */
+
+.accessibility-section {
+    background-color: #fef3c7;
+    border-left: 4px solid var(--warning);
+}
+
+.good-contrast {
+    color: #1f2937;
+    background-color: #ffffff;
+    padding: var(--spacing-sm);
+    border-radius: 4px;
+}
+
+.poor-contrast {
+    color: #d1d5db; /* Light gray on white - poor contrast */
+    background-color: #ffffff;
+    padding: var(--spacing-sm);
+    border-radius: 4px;
+}
+
+.warning-box {
+    border: 2px solid var(--warning);
+    background-color: #fffbeb;
+}
+
+.good-line-length {
+    max-width: 65ch; /* Optimal: 50-75 characters */
+    background-color: #d1fae5;
+    padding: var(--spacing-sm);
+    border-radius: 4px;
+    border-left: 4px solid var(--success);
+}
+
+.bad-line-length {
+    max-width: 100%; /* Too wide */
+    background-color: #fee2e2;
+    padding: var(--spacing-sm);
+    border-radius: 4px;
+    border-left: 4px solid var(--danger);
+}
+
+.scalable-text {
+    font-size: 1rem; /* Uses rem, scales with user preferences */
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.page-footer {
+    background-color: var(--text-dark);
+    color: white;
+    text-align: center;
+    padding: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+    .container {
+        padding: var(--spacing-sm);
+    }
+    
+    .page-header h1 {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .lesson-section {
+        padding: var(--spacing-sm);
+    }
+    
+    .article-example {
+        padding: var(--spacing-md);
+    }
+    
+    .card-example {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --font-size-base: 0.875rem; /* 14px on very small screens */
+    }
+    
+    .page-header {
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+}
