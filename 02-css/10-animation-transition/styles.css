@@ -1,0 +1,324 @@
+/* GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.section {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #667eea;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.example-box {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+/* ============================================
+   1. TRANSITIONS
+   ============================================ */
+
+/* Basic Transition - Single Property */
+.btn-basic {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Transition: property duration timing-function delay */
+    transition: background-color 0.3s ease;
+}
+
+.btn-basic:hover {
+    background-color: #764ba2;
+}
+
+/* Multiple Properties Transition */
+.card {
+    width: 300px;
+    padding: 30px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    /* Shorthand for multiple properties */
+    transition: all 0.4s ease-in-out;
+}
+
+.card:hover {
+    background-color: #667eea;
+    color: white;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(102, 126, 234, 0.3);
+}
+
+/* Transition Timing Functions Demo */
+.timing-demo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box {
+    width: 100px;
+    padding: 15px;
+    background-color: #667eea;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+.box.ease {
+    transition-timing-function: ease;
+}
+
+.box.linear {
+    transition-timing-function: linear;
+}
+
+.box.ease-in {
+    transition-timing-function: ease-in;
+}
+
+.box.ease-out {
+    transition-timing-function: ease-out;
+}
+
+.box.ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+.timing-demo:hover .box {
+    transform: translateX(200px);
+}
+
+/* ============================================
+   2. ANIMATIONS (KEYFRAMES)
+   ============================================ */
+
+/* Simple Bounce Animation */
+.bounce-box {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    /* Animation: name duration timing-function delay iteration-count direction fill-mode */
+    animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+/* Spinning Animation */
+.spinner {
+    width: 80px;
+    height: 80px;
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Multi-Step Color Animation */
+.color-changer {
+    width: 200px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    animation: colorChange 4s ease-in-out infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #667eea;
+        transform: scale(1);
+    }
+    25% {
+        background-color: #f093fb;
+        transform: scale(1.1);
+    }
+    50% {
+        background-color: #4facfe;
+        transform: scale(1);
+    }
+    75% {
+        background-color: #43e97b;
+        transform: scale(1.1);
+    }
+    100% {
+        background-color: #667eea;
+        transform: scale(1);
+    }
+}
+
+/* Shake Animation on Hover */
+.shake-btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #764ba2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.shake-btn:hover {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+    }
+}
+
+/* ============================================
+   3. PRACTICAL EXAMPLES
+   ============================================ */
+
+/* Loading Spinner */
+.loader {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #667eea;
+    border-right: 6px solid #764ba2;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+/* Pulsing Button */
+.pulse-btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.7);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 15px rgba(255, 107, 107, 0);
+    }
+}
+
+/* Sliding Menu */
+.menu-container {
+    position: relative;
+}
+
+.menu-toggle {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.slide-menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: white;
+    border: 2px solid #667eea;
+    border-radius: 5px;
+    width: 200px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.menu-container:hover .slide-menu {
+    max-height: 200px;
+}
+
+.slide-menu ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.slide-menu li {
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.slide-menu li:hover {
+    background-color: #f0f0f0;
+    color: #667eea;
+}
