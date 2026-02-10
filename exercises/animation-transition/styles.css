@@ -11,19 +11,42 @@ body{
 
 .container{
     max-width: 1200px;
-    margin: auto;
+
+    margin:  auto;
     padding: 0 4px;
     min-height: 100vh;
 }
 
 .section{
     background-color: white;
-    width:fit-content;
+  
     height: auto;
-    border-radius: 30px;
     padding: 30px;
     box-shadow: 0,10px 30px rgba(0, 0, 0, 0.2);
 
 }
 
+
+.example-box{
+    border-left: 4px solid rebeccapurple;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+.btn-basic{
+    padding: 15px 30px;
+    background-color: chartreuse;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.btn-basic:hover{
+    background-color: coral;
+}
 
