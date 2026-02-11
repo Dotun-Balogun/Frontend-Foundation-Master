@@ -84,3 +84,42 @@ h3{
     color: white;
     
 }
+
+.box{
+width:100px;
+text-align:center;
+color:white;
+cursor:pointer;
+padding:20px;
+background-color: skyblue;
+border-radius: 10px;
+transition: all 0.5s ease;
+}
+
+.timing-demo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.box.ease{
+ transition-timing-function: ease;
+}
+
+.box.ease-in{
+ transition-timing-function: ease-in;
+}
+
+.box.ease-in-out
+{
+ transition-timing-function: ease-in-out;
+}
+
+.box.linear{
+ transition-timing-function: linear;
+}
+
+.timing-demo:hover .box{
+    transform: translateX(200px);
+}
