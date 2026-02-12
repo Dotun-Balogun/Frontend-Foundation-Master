@@ -123,3 +123,28 @@ transition: all 0.5s ease;
 .timing-demo:hover .box{
     transform: translateX(200px);
 }
+
+/* 2.       CSS ANIMATION(KEYFRAMES) */
+
+.bounce-box{
+    height: 150px;
+    width: 150px;
+    background-color: green;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 24px;
+    color: white;
+    animation: bounce 1s ease-in-out infinite;
+}
+
+
+@keyframes bounce {
+    0% ,100% {
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    
+}
