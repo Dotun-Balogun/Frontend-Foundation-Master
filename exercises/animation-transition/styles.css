@@ -167,3 +167,41 @@ transition: all 0.5s ease;
     transform: rotate(360deg) ;
  }
 }
+
+
+.color-changer{
+    width:150px;
+    height: 150px;
+    background-color: purple;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    color:white;
+    animation: color-changer 3s ease-in-out infinite;
+
+
+}
+
+
+@keyframes color-changer {
+    0%{
+        background-color:purple;
+        transform:scale(1)
+
+    }
+
+    50%{
+        background-color: orange;
+        transform: scale(1.1);
+    }
+
+    75%{
+        background-color: blue;
+        transform:scale(1)
+    }
+
+    100%{
+        background-color: purple;
+        transform:scale(1)
+    }
+}
