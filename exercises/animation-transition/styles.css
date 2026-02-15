@@ -205,3 +205,36 @@ transition: all 0.5s ease;
         transform:scale(1)
     }
 }
+
+
+
+.shake-btn{
+    width: 200px;
+    padding: 10px;
+    background-color: red;
+    border-radius: 30px;
+    border: none;
+
+}
+
+.shake-btn:hover{
+  animation: shake 1s ease-in-out ;
+}
+
+@keyframes shake {
+    0%, 100% {
+       transform: translateX(0);
+    }
+
+    10%, 20%, 30%, 40%{
+        transform: translateX(-5);
+    }
+
+    50%, 60%, 70%, 80%{
+        transform: translateX(5);
+    }
+
+    90%, 100%{
+        transform: translateX(0);
+    }
+}
