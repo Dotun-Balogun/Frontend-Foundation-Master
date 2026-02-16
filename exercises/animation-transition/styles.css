@@ -247,7 +247,7 @@ height: 60px;
 border-radius: 50%;
 border: 6px solid #f3f3f3;
 border-top: 6px solid #ddd;
-border-left: red;
+border-left:6px solid red;
 animation: loader 1s linear infinite  ;
 }
 
