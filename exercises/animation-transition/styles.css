@@ -287,3 +287,23 @@ animation: loader 1s linear infinite  ;
 
 }
 
+
+
+.menu-container .menu-toggle {
+    flex-direction: row;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-container .slide-menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 2px;
+}
