@@ -342,3 +342,22 @@ animation: loader 1s linear infinite  ;
 }
 
 
+.Hikmat-spin{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #667eea;
+    animation: hikmat-spin 1s linear infinite;
+}
+
+@keyframes hikmat-spin{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }   
+    
+}
