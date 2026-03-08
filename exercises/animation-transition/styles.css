@@ -361,3 +361,27 @@ animation: loader 1s linear infinite  ;
     }   
     
 }
+
+
+
+.hikmat-bounce{
+    width: 100px;
+    height: 100px;
+    background-color: #667eea;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: hikmat-bounce 1s ease-in-out infinite;
+}
+
+@keyframes hikmat-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
